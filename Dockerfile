@@ -1,11 +1,12 @@
-FROM alpine:latest
+FROM alpine
 
 RUN apk add --no-cache \
     bash \
     nano vim \
     curl \
     wget \
-    nmap
+    nmap \
+    postgresql-client
 
 ARG HOME=/root
 WORKDIR $HOME
