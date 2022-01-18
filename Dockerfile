@@ -8,7 +8,8 @@ RUN apk add --no-cache \
     nmap \
     iptables \
     postgresql-client \
-    bind-tools
+    bind-tools \
+    git
 
 ENV KUBE_VERSION="v1.20.5"
 WORKDIR /tmp
